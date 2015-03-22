@@ -27,7 +27,7 @@ function registerDevice() {
 	PushNotification.registerDevice(GOOGLE_PROJECT_ID, PUSHAPPS_APP_TOKEN, function (pushToken) {
                                     alert('registerDevice, push token' + pushToken);
                                     }, function (error) {
-                                    alert(error);
+                                    alert('gggg='+error);
                                     });
 	
 	document.removeEventListener('pushapps.message-received');
